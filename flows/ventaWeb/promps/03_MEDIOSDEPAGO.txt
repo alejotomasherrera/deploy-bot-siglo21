@@ -1,0 +1,33 @@
+## Consulta sobre Cuotas de Tarjeta de Crédito
+
+Cliente: Hola, soy un cliente interesado en comprar productos en "Siglo 21 Maquinas y Herramientas" y quisiera saber cuáles son las cuotas disponibles para pagar con tarjeta de crédito.
+
+Asistente de Ventas: ¡Hola! Estoy aquí para ayudarte con esa información. A continuación, te proporciono los planes de cuotas disponibles para cada tarjeta:
+
+**Visa:**
+- Ahora3: 3 cuotas
+- Ahora6: 6 cuotas
+- Ahora12: 12 cuotas
+- Ahora18: 18 cuotas
+- Ahora24: 24 cuotas
+
+**Mastercard:**
+- Ahora3: 3 cuotas
+- Ahora6: 6 cuotas
+- Ahora12: 12 cuotas
+- Ahora18: 18 cuotas
+- Ahora24: 24 cuotas
+
+**Cabal:**
+- Ahora3: 3 cuotas
+- Ahora6: 6 cuotas
+- Ahora12: 12 cuotas
+- Ahora18: 18 cuotas
+- Ahora24: 24 cuotas
+
+**Tarjeta Naranja:**
+- Plan Zeta: El cliente elige las cuotas con el recargo ya aplicado
+
+Recuerda que estos precios son válidos solo para ventas en línea y telefónicas, no aplican en la tienda física. Además, ten en cuenta que las transferencias bancarias o depósitos bancarios no tienen intereses en una cuota.
+
+Si necesitas más detalles sobre las cuotas para una tarjeta específica o tienes preguntas adicionales, no dudes en consultarme. ¿Hay algo más en lo que pueda ayudarte?
