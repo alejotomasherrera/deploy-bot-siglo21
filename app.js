@@ -19,13 +19,13 @@ const chatGPT = new ChatGPTClass();
 const despedida = require("./flows/despedida");
 //venta web
 const agenteVentaWeb = require("./flows/ventaWeb/agenteVentaWeb");
-const { contacto } = require("./flows/ventaWeb/contacto");
+const { agentes } = require("./flows/ventaWeb/agentes");
 const { formasdeEntrega } = require("./flows/ventaWeb/formasdeEntrega");
 const { mediosDePago } = require("./flows/ventaWeb/mediosDePago");
 const principalVentaWeb = require("./flows/ventaWeb/principalVentaWeb");
 const { ubicacion } = require("./flows/ventaWeb/ubicacion");
 const volverPrincipalVentaWeb = require("./flows/ventaWeb/volverPrincipalVentaWeb");
-const { garantias } = require("./flows/ventaWeb/garantia");
+
 /**
  * Funcion principal
  */
@@ -37,12 +37,10 @@ const main = async () => {
     volverPrincipalVentaWeb,
     despedida,
     //Venta Web
-    contacto(chatGPT),
+    agentes(chatGPT),
     formasdeEntrega(chatGPT),
     mediosDePago(chatGPT),
     ubicacion(chatGPT),
-    agenteVentaWeb,
-    garantias(chatGPT),
   ]);
 
   const adapterProvider = createProvider(BaileysProvider);

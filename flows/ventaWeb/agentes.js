@@ -17,13 +17,19 @@ const getPrompt = async () => {
 };
 
 module.exports = {
-  contacto: (chatgptClass) => {
-    return addKeyword("contacto", {
-      onlycontains: true,
-      sensitive: true,
+  agentes: (chatgptClass) => {
+    return addKeyword(["agente", "agentes", "Agentes", "Agente"], {
+      sensitive: true
     })
       .addAnswer(
-        "🔧 **Siglo 21 Máquinas y Herramientas** 📍 \n\nPara cualquier consulta, puedes contactarnos en las siguientes áreas: \n\n📡 *Ventas Web / Marketing*: +54 9 299 422 9156 📞 | ventasonline@siglo21myh.com.ar 📧\n\n📑 *Cotizaciones / Presupuestos*: +54 9 299 594-7950 📞 | cotizaciones@siglo21myh.com.ar 📧\n\n🔩 *Repuestos*: +54 9 299 405-3248 / +54 9 299 622-3938 📞\n\n 🔧 *Alquileres / Garantías*: +54 9 299 511-3720 📞\n\n🛠️ *Reparaciones / Servicio Técnico*: +54 9 299 577-2751 📞\n\nEstamos aquí para ayudarte en lo que necesites. 😊"
+          "Estamos aquí para ayudarte en los siguientes enlaces:\n\n" +
+          "💼 Ventas Web / Marketing 📞 | [Contacto](https://wa.me/5492995947950)\n" +
+          "📄 Cotizaciones / Presupuestos 📞 | [Contacto](https://wa.me/5492995947950)\n" +
+          "🔩 Repuestos 📞 | [Contacto](https://wa.me/5492994053248)\n" +
+          "🔧 Alquileres / Garantías 📞 | [Contacto](https://wa.me/5492995113720)\n" +
+          "🛠️ Reparaciones / Servicio Técnico 📞 | [Contacto](https://wa.me/5492995772751)\n\n" +
+          "Selecciona el enlace para redirigrte a la conversacion con un agente o escribe 'volver' si deseas regresar al menú principal.\n"+
+          "Recuerda que nuestros agentes estan disponibles de Lunes a Viernes de 9:00 a 19:00 hs y los Sabados de 9:00 a 13:00 hs."
       )
       .addAnswer(
         `¿Necesitas más información o tienes alguna pregunta sobre el contacto? Si deseas volver al menu ingresa: *volver* `,
@@ -37,11 +43,19 @@ module.exports = {
                 "VOLVER",
                 "Volver",
                 "envios",
+                "Envios",
+                "ENVIOS",
+                "PAGOS",
                 "pagos",
-                "contacto",
+                "Pagos",
+                "ubicacion",
+                "Ubicacion",
+                "UBICACION",
                 "ubicacion",
                 "garantias",
-                "agente"
+                "agente",
+                "agentes",
+                "Agentes",
               )
           ) {
             //send prompt to gpt

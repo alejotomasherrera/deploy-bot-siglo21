@@ -18,8 +18,7 @@ const getPrompt = async () => {
 
 module.exports = {
   ubicacion: (chatgptClass) => {
-    return addKeyword('ubicacion', {
-      onlycontains: true,
+    return addKeyword(['ubicacion',"UBICACION","Ubicacion"], {
       sensitive: true,
     })
       .addAnswer(
@@ -43,11 +42,19 @@ module.exports = {
                 "VOLVER",
                 "Volver",
                 "envios",
+                "Envios",
+                "ENVIOS",
+                "PAGOS",
                 "pagos",
-                "contacto",
+                "Pagos",
+                "ubicacion",
+                "Ubicacion",
+                "UBICACION",
                 "ubicacion",
                 "garantias",
-                "agente"
+                "agente",
+                "agentes",
+                "Agentes",
               )
           ) {
             const data = await getPrompt();

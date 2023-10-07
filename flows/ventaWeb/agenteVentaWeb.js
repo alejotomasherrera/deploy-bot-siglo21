@@ -1,6 +1,6 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-const flowAgente = addKeyword(["agente"], {
+const flowAgente = addKeyword([], {
   sensitive: true,
   onlycontains: true,
 })

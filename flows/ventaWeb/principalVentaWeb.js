@@ -11,12 +11,10 @@ const principalWeb = addKeyword([EVENTS.WELCOME])
     "",
     "Por favor, ingresa la palabra de la opción que deseas: ⌨️",
     "",
-    "Métodos de envíso y entregas 🚚:  *envios*",
+    "Métodos de envíos y entregas 🚚:  *envios*",
     "Medios de pagos 💳:  *pagos*",
-    "Contacto 📞:  *contacto*",
+    "Contacto 📞:  *agente*",
     "Ubicación 🗺️:  *ubicacion*",
-    "Garantias 🛠️:  *garantias*",
-    "Contactar Agentes 📞👤:  *agente*",
     "Finalizar chat 📝👋",
   ]);
 

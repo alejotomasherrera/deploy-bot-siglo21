@@ -16,9 +16,8 @@ const getPrompt = async () => {
 
 const formasdeEntrega = {
   formasdeEntrega: (chatgptClass) => {
-    return addKeyword("envios", {
-      sensitive: false,
-      onlycontains: true,
+    return addKeyword(["envios","Envios","ENVIOS"], {
+      sensitive: true
     })
       .addAnswer(
         "¡Genial! Aquí te presentamos nuestras formas de entrega disponibles 🚚🌟:\n\n" +
@@ -43,11 +42,19 @@ const formasdeEntrega = {
                 "VOLVER",
                 "Volver",
                 "envios",
+                "Envios",
+                "ENVIOS",
+                "PAGOS",
                 "pagos",
-                "contacto",
+                "Pagos",
+                "ubicacion",
+                "Ubicacion",
+                "UBICACION",
                 "ubicacion",
                 "garantias",
-                "agente"
+                "agente",
+                "agentes",
+                "Agentes"
               )
           ) {
             // Envía el mensaje a GPT
