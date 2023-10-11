@@ -13,7 +13,7 @@ const principalWeb = addKeyword([EVENTS.WELCOME])
     "",
     "Métodos de envíos y entregas 🚚:  *envios*",
     "Medios de pagos 💳:  *pagos*",
-    "Contacto 📞:  *agente*",
+    "Contacto 📞:  *contacto*",
     "Ubicación 🗺️:  *ubicacion*",
     "Finalizar chat 📝👋",
   ]);
