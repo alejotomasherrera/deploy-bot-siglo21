@@ -9,7 +9,7 @@ const volverPrincipalWeb = addKeyword(["volver","VOLVER","Volver"])
     "",
     "Métodos de envío y entrega 🚚: *envios*",
     "Medios de pago 💳: *pagos*",
-    "Contacto 📞: *agente*",
+    "Contacto 📞: *contacto*",
     "Ubicación 🗺️: *ubicacion*",
     "Finalizar chat 📝👋",
   ]);

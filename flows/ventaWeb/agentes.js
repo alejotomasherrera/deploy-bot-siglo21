@@ -18,17 +18,17 @@ const getPrompt = async () => {
 
 module.exports = {
   agentes: (chatgptClass) => {
-    return addKeyword(["agente", "agentes", "Agentes", "Agente"], {
-      sensitive: true
+    return addKeyword(["contacto", "contactos", "Contacto", "Contactos"], {
+      sensitive: true,
     })
       .addAnswer(
-          "Estamos aquí para ayudarte en los siguientes enlaces:\n\n" +
+        "Estamos aquí para ayudarte en los siguientes enlaces:\n\n" +
           "💼 Ventas Web / Marketing 📞 | [Contacto](https://wa.me/5492995947950)\n" +
           "📄 Cotizaciones / Presupuestos 📞 | [Contacto](https://wa.me/5492995947950)\n" +
           "🔩 Repuestos 📞 | [Contacto](https://wa.me/5492994053248)\n" +
           "🔧 Alquileres / Garantías 📞 | [Contacto](https://wa.me/5492995113720)\n" +
           "🛠️ Reparaciones / Servicio Técnico 📞 | [Contacto](https://wa.me/5492995772751)\n\n" +
-          "Selecciona el enlace para redirigrte a la conversacion con un agente o escribe 'volver' si deseas regresar al menú principal.\n"+
+          "Selecciona el enlace para redirigrte a la conversacion con un agente o escribe 'volver' si deseas regresar al menú principal.\n" +
           "Recuerda que nuestros agentes estan disponibles de Lunes a Viernes de 9:00 a 19:00 hs y los Sabados de 9:00 a 13:00 hs."
       )
       .addAnswer(
@@ -53,9 +53,10 @@ module.exports = {
                 "UBICACION",
                 "ubicacion",
                 "garantias",
-                "agente",
-                "agentes",
-                "Agentes",
+                "contacto",
+                "contactos",
+                "Contacto",
+                "Contactos"
               )
           ) {
             //send prompt to gpt

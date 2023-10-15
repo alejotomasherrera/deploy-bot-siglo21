@@ -3,7 +3,7 @@ const fs = require("fs");
 const { addKeyword } = require("@bot-whatsapp/bot");
 
 const flowDespedida = addKeyword(
-  ["chau", "gracias", "finalizar chat", "adios", "hasta luego","7"],
+  ["chau", "gracias", "finalizar chat", "adios", "hasta luego", "chauu", "adiós", "adios", "adiós"],
   {
     onlyContainsKeyword: true,
   }

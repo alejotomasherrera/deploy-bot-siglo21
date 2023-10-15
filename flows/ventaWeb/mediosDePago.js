@@ -17,8 +17,8 @@ const getPrompt = async () => {
 
 module.exports = {
   mediosDePago: (chatgptClass) => {
-    return addKeyword(["pagos","PAGOS","Pagos"], {
-      sensitive: true
+    return addKeyword(["pagos", "PAGOS", "Pagos"], {
+      sensitive: true,
     })
       .addAnswer(
         "💳 Medios de pago 💰\n\n*Tarjetas de crédito*: Disponibles con 3 cuotas con interes en adelante 💳\n\n*Transf o deposito*.: Realiza una transferencia o deposito bancaria para pagar tus compras 🏦\n\n *Mercado pago*:\n" +
@@ -52,9 +52,10 @@ module.exports = {
                 "UBICACION",
                 "ubicacion",
                 "garantias",
-                "agente",
-                "agentes",
-                "Agentes"
+                "contacto",
+                "contactos",
+                "Contacto",
+                "Contactos"
               )
           ) {
             const data = await getPrompt();

@@ -52,9 +52,10 @@ const formasdeEntrega = {
                 "UBICACION",
                 "ubicacion",
                 "garantias",
-                "agente",
-                "agentes",
-                "Agentes"
+                "contacto",
+                "contactos",
+                "Contacto",
+                "Contactos"
               )
           ) {
             // Envía el mensaje a GPT
