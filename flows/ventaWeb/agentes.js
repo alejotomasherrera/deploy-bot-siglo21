@@ -28,8 +28,8 @@ module.exports = {
           "🔩 Repuestos 📞 | [Contacto](https://wa.me/5492994053248)\n" +
           "🔧 Alquileres / Garantías 📞 | [Contacto](https://wa.me/5492995113720)\n" +
           "🛠️ Reparaciones / Servicio Técnico 📞 | [Contacto](https://wa.me/5492995772751)\n\n" +
-          "Selecciona el enlace para redirigrte a la conversacion con un agente o escribe 'volver' si deseas regresar al menú principal.\n" +
-          "Recuerda que nuestros agentes estan disponibles de Lunes a Viernes de 9:00 a 19:00 hs y los Sabados de 9:00 a 13:00 hs."
+          "Selecciona el enlace para redirigrte a la conversacion con un agente.\n" +
+          "Recuerda que nuestros agentes estan disponibles de *Lunes a Viernes de 9:00 a 19:00 hs y los Sabados de 9:00 a 13:00 hs.*"
       )
       .addAnswer(
         `¿Necesitas más información o tienes alguna pregunta sobre el contacto? Si deseas volver al menu ingresa: *volver* `,
