@@ -38,7 +38,7 @@ module.exports = {
           if (
             !ctx.body
               .toLowerCase()
-              .includes(
+              .includes([
                 "volver",
                 "VOLVER",
                 "Volver",
@@ -56,7 +56,7 @@ module.exports = {
                 "contacto",
                 "contactos",
                 "Contacto",
-                "Contactos"
+                "Contactos"]
               )
           ) {
             //send prompt to gpt

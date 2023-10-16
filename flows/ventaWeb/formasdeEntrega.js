@@ -37,7 +37,7 @@ const formasdeEntrega = {
           if (
             !ctx.body
               .toLowerCase()
-              .includes(
+              .includes([
                 "volver",
                 "VOLVER",
                 "Volver",
@@ -55,7 +55,7 @@ const formasdeEntrega = {
                 "contacto",
                 "contactos",
                 "Contacto",
-                "Contactos"
+                "Contactos"]
               )
           ) {
             // Envía el mensaje a GPT
