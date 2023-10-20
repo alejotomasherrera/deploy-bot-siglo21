@@ -37,7 +37,7 @@ const formasdeEntrega = {
           if (
             !ctx.body
               .toLowerCase()
-              .includes([
+              .includes(
                 "volver",
                 "VOLVER",
                 "Volver",
@@ -51,18 +51,14 @@ const formasdeEntrega = {
                 "Ubicacion",
                 "UBICACION",
                 "ubicacion",
-                "garantias",
-                "contacto",
-                "contactos",
-                "Contacto",
-                "Contactos"]
+                "garantias"
               )
           ) {
             // Envía el mensaje a GPT
             const data = await getPrompt();
             await chatgptClass.handleMsgChatGPT(data); // Diciéndole actuar
             const textFromAI = await chatgptClass.handleMsgChatGPT(ctx.body);
-            await fallBack(textFromAI.text, { capture: true, sensitive: false });
+            await fallBack(textFromAI.text);
             await fallBack(
               "Si deseas volver al menú de venta web, ingresa: *volver* "
             );

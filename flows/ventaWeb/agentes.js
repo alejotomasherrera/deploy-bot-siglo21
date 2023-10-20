@@ -1,4 +1,4 @@
-const { addKeyword } = require("@bot-whatsapp/bot");
+const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 const { readFileSync } = require("fs");
 const { join } = require("path");
 /**
@@ -18,46 +18,37 @@ const getPrompt = async () => {
 
 module.exports = {
   agentes: (chatgptClass) => {
-    return addKeyword(["contacto", "contactos", "Contacto", "Contactos"], {
+    return addKeyword([EVENTS.WELCOME], {
       sensitive: true,
     })
       .addAnswer(
-        "Estamos aquí para ayudarte en los siguientes enlaces:\n\n" +
+        "¡Hola! 👋 Soy Don Carlos, el asistente virtual de Siglo 21 Máquinas y Herramientas. Estoy aquí para ayudarte con gusto. 😊\n\n" +
+          "Puedes contactarnos en los siguientes enlaces:\n" +
           "💼 Ventas Web / Marketing 📞 | [Contacto](https://wa.me/5492995947950)\n" +
           "📄 Cotizaciones / Presupuestos 📞 | [Contacto](https://wa.me/5492995947950)\n" +
           "🔩 Repuestos 📞 | [Contacto](https://wa.me/5492994053248)\n" +
           "🔧 Alquileres / Garantías 📞 | [Contacto](https://wa.me/5492995113720)\n" +
           "🛠️ Reparaciones / Servicio Técnico 📞 | [Contacto](https://wa.me/5492995772751)\n\n" +
-          "Selecciona el enlace para redirigrte a la conversacion con un agente.\n" +
-          "Recuerda que nuestros agentes estan disponibles de *Lunes a Viernes de 9:00 a 19:00 hs y los Sabados de 9:00 a 13:00 hs.*"
+          "¡Selecciona el enlace que mejor se adapte a tu consulta y te redirigiremos a un agente listo para ayudarte! 😃\n\n" +
+          "Recuerda que nuestros agentes están disponibles de *Lunes a Viernes de 9:00 a 19:00 hs* y los *Sábados de 9:00 a 13:00 hs*."
       )
       .addAnswer(
-        `¿Necesitas más información o tienes alguna pregunta sobre el contacto? Si deseas volver al menu ingresa: *volver* `,
-        { capture: true, sensitive: false },
+        `Ingresa *Menu* para dirigirte a mas opciones!`,
+        { capture: true },
         async (ctx, { fallBack }) => {
           if (
-            !ctx.body
-              .toLowerCase()
-              .includes([
-                "volver",
-                "VOLVER",
-                "Volver",
-                "envios",
-                "Envios",
-                "ENVIOS",
-                "PAGOS",
-                "pagos",
-                "Pagos",
-                "ubicacion",
-                "Ubicacion",
-                "UBICACION",
-                "ubicacion",
-                "garantias",
-                "contacto",
-                "contactos",
-                "Contacto",
-                "Contactos"]
-              )
+            !ctx.body.toLowerCase().includes("Menu") &&
+            !ctx.body.toLowerCase().includes("MENU") &&
+            !ctx.body.toLowerCase().includes("menu") &&
+            !ctx.body.toLowerCase().includes("volver") &&
+            !ctx.body.toLowerCase().includes("envios") &&
+            !ctx.body.toLowerCase().includes("pagos") &&
+            !ctx.body.toLowerCase().includes("ubicacion") &&
+            !ctx.body.toLowerCase().includes("garantias") &&
+            !ctx.body.toLowerCase().includes("contacto") &&
+            !ctx.body.toLowerCase().includes("contactos") &&
+            !ctx.body.toLowerCase().includes("gracias") &&
+            !ctx.body.toLowerCase().includes("finalizar chat")
           ) {
             //send prompt to gpt
             const data = await getPrompt();

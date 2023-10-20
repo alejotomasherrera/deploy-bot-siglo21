@@ -29,7 +29,6 @@ module.exports = {
           " -Alias: siglo21maqyher\n" +
           " -CUIT/CUIL: 20236414273"
       )
-
       .addAnswer(
         `Necesitas más información o tienes alguna pregunta sobre los medios de pago? Si deseas volver al menu de venta web ingresa: *volver* `,
         { capture: true, sensitive: false },
@@ -37,7 +36,7 @@ module.exports = {
           if (
             !ctx.body
               .toLowerCase()
-              .includes([
+              .includes(
                 "volver",
                 "VOLVER",
                 "Volver",
@@ -51,11 +50,7 @@ module.exports = {
                 "Ubicacion",
                 "UBICACION",
                 "ubicacion",
-                "garantias",
-                "contacto",
-                "contactos",
-                "Contacto",
-                "Contactos"]
+                "garantias"
               )
           ) {
             const data = await getPrompt();

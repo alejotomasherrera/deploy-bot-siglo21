@@ -37,7 +37,7 @@ module.exports = {
           if (
             !ctx.body
               .toLowerCase()
-              .includes([
+              .includes(
                 "volver",
                 "VOLVER",
                 "Volver",
@@ -51,11 +51,7 @@ module.exports = {
                 "Ubicacion",
                 "UBICACION",
                 "ubicacion",
-                "garantias",
-                "contacto",
-                "contactos",
-                "Contacto",
-                "Contactos"]
+                "garantias"
               )
           ) {
             const data = await getPrompt();

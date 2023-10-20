@@ -1,14 +1,11 @@
 const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 
-const principalWeb = addKeyword([EVENTS.WELCOME]).addAnswer(
+const principalWeb = addKeyword(["menu","Menu"]).addAnswer(
   [
-    "¡Hola! 👋 Soy Don Carlos, el asistente virtual de *Siglo 21 Máquinas y Herramientas* 🛠️🌱\n" +
-      "\n" +
       "Por favor, ingresa la palabra de la opción que deseas: ⌨️\n" +
       "\n" +
       "Métodos de envíos y entregas 🚚:  *envios*\n" +
       "Medios de pagos 💳:  *pagos*\n" +
-      "Contacto 📞:  *contacto*\n" +
       "Ubicación 🗺️:  *ubicacion*\n" +
       "Finalizar chat 📝👋",
   ],

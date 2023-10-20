@@ -6,7 +6,6 @@ const volverPrincipalWeb = addKeyword(["volver", "VOLVER", "Volver"]).addAnswer(
       "\n" +
       "Métodos de envíos y entregas 🚚:  *envios*\n" +
       "Medios de pagos 💳:  *pagos*\n" +
-      "Contacto 📞:  *contacto*\n" +
       "Ubicación 🗺️:  *ubicacion*\n" +
       "Finalizar chat 📝👋",
   ],
