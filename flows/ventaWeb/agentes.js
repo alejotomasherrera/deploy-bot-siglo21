@@ -24,11 +24,11 @@ module.exports = {
       .addAnswer(
         "¡Hola! 👋 Soy Don Carlos, el asistente virtual de Siglo 21 Máquinas y Herramientas. Estoy aquí para ayudarte con gusto. 😊\n\n" +
           "Puedes contactarnos en los siguientes enlaces:\n" +
-          "💼 Ventas Web / Marketing 📞 |(https://wa.me/5492995947950)\n" +
-          "📄 Cotizaciones / Presupuestos 📞 |(https://wa.me/5492995947950)\n" +
-          "🔩 Repuestos 📞 |(https://wa.me/5492994053248)\n" +
-          "🔧 Alquileres / Garantías 📞 |(https://wa.me/5492995113720)\n" +
-          "🛠️ Reparaciones / Servicio Técnico 📞 (https://wa.me/5492995772751)\n\n" +
+          "*Ventas Web*📞|(https://wa.me/5492995947950)\n" +
+          "*Cotizaciones*📞|(https://wa.me/5492995947950)\n" +
+          "*Repuestos*📞|(https://wa.me/5492994053248)\n" +
+          "*Alquileres - Garantías* 📞|(https://wa.me/5492995113720)\n" +
+          "*Servicio Técnico* 📞|(https://wa.me/5492995772751)\n\n" +
           "¡Selecciona el enlace que mejor se adapte a tu consulta y te redirigiremos a un agente listo para ayudarte! 😃\n\n" +
           "Recuerda que nuestros agentes están disponibles de *Lunes a Viernes de 9:00 a 19:00 hs* y los *Sábados de 9:00 a 13:00 hs*."
       )
